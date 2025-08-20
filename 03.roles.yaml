@@ -1,0 +1,5 @@
+- name: variables
+  hots: localhost
+  connection: local
+  roles:
+    - sample
