@@ -1,7 +1,7 @@
 - name: Variables
   hosts: localhost
   connection: local
-  Vars:
+  vars:
     URL: play.google.com
   tasks:
     - name: Print a variable
