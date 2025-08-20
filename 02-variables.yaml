@@ -1,9 +1,15 @@
 - name: Variables
   hosts: localhost
   connection: local
+  Vars:
+    URL: play.google.com
   tasks:
     - name: Print a variable
       vars:
         URL: task.google.com
       ansible.builtin.debug:
           msg: Var URL - {{ URL }}
+
+    - name: Print a variable
+      ansible.builtin.debug:
+        msg: Var URL - {{ URL }}
