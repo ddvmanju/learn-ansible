@@ -1,4 +1,4 @@
-- name: condition
+- name: Condition
   host: localhost
   connection: local
   tasks:
