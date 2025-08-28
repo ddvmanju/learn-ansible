@@ -10,7 +10,7 @@
       vars:
         URL: task.google.com
       ansible.builtin.debug:
-          msg: Var URL - {{ URL }}
+          msg: Var URL - {{ URL }}, NEW URL - {{ NEW-URL }}
 
     - name: Print a variable
       ansible.builtin.debug:
@@ -21,5 +21,13 @@
   #syntax: KEY: "{{ var }}"
 
   # Variable precedense - If same variable is declared in multiple, which will be picked by Ansible
-  # Task Variable
-  # Play Variable
+  # 1. command line variable
+  # 2. Task Variable
+  # 3. Play level variable from file
+  # 4, Play Variable
+  # 5. Roles vars variable
+  # 6. Roles default variable
+
+  # var: Value
+  # Variables can have a-z, A-Z, 0-9, '_'
+
