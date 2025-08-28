@@ -7,7 +7,7 @@
     #     src: test.txt
     #     dest: /tmp/test-copy.txt
 
-    - name: Use template to copy a file
+    - name: copy a file
       ansible.builtin.template:
         src: test.txt
-        dest: /tmp/test-template.txt
+        dest: /tmp/test-copy.txt
