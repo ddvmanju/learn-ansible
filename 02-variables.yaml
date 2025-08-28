@@ -20,6 +20,7 @@
       ansible.builtin.debug: ls
       register: out
 
+
     - name: Print out
       ansible.builtin.debug:
         msg: "{{ out }}"
