@@ -4,3 +4,4 @@
   tasks:
     - name: print
       ansible.builtin.shell: lss
+      ignore_errors: true
