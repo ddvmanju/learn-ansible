@@ -14,7 +14,7 @@
 
     - name: Print a variable
       ansible.builtin.debug:
-        msg: ""{{ URL }}""
+        msg: "{{ URL }}"
 
     - name: Task output
       ansible.builtin.debug: ls
