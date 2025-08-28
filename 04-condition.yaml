@@ -1,6 +1,6 @@
 - name: Condition
   host: localhost
-  connection: local
+  connection: all
   tasks:
     - name: print if value is greater than 10
       ansible.builtin.debug:
