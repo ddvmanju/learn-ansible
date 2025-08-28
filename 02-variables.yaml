@@ -17,9 +17,8 @@
         msg: "{{ URL }}"
 
     - name: Task output
-      ansible.builtin.debug: ls
+      ansible.builtin.shell: ls
       register: out
-
 
     - name: Print out
       ansible.builtin.debug:
