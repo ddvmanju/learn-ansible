@@ -15,3 +15,6 @@
     - name: print var
       ansible.builtin.debug:
         msg: "{{ PASSWORD }}"
+
+# command to execute:  ansible-playbook --ask-vault-pass 08-vault.yaml
+#devops
