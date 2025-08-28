@@ -11,3 +11,5 @@
       ansible.builtin.template:
         src: test.txt
         dest: /tmp/test-copy.txt
+
+        # git pull ; ansible-playbook 09-template.yaml -e name=john
