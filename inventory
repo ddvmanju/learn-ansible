@@ -5,5 +5,5 @@
 #ansible best practices book
 
 [APP]
-10.0.0.13
+10.0.0.13 URL=inventory.google.com
 10.0.0.14

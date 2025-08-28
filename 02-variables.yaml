@@ -14,9 +14,17 @@
 
     - name: Print a variable
       ansible.builtin.debug:
-        msg: Var URL - {{ URL }}
+        msg: {{ URL }}
 
-roles:
+    - name: Task output
+      ansible.builtin.debug: ls
+      register: out
+
+    - name: Print out
+      ansible.builtin.debug:
+        msg: "{{ out }}"
+
+  roles:
     - sample
 
 
@@ -30,7 +38,8 @@ roles:
 # 3. Play level variable from file
 # 4, Play Variable
 # 5. Roles vars variable
-# 6. Roles default variable
+# 6. Inventory Variable
+# 7. Roles default variable
 
 # var: Name
 # Variables can have a-z, A-Z, 0-9, '_'
