@@ -1,1 +1,9 @@
+[DB]
 10.0.0.11
+10.0.0.12
+
+#ansible best practices book
+
+[APP]
+10.0.0.13
+10.0.0.14
