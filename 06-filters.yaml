@@ -1,0 +1,9 @@
+- name: Filters
+  hosts: localhost
+  connection: local
+  vars:
+    URL: https://learn.joindevops.com/learn/home/devsecops-with-azure-82-english/section/559310/lesson/3546506?
+  tasks:
+    - name: print
+      ansible.builtin.debug:
+        msg: "{{ URL | split ('/') }}"
