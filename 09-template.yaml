@@ -2,8 +2,8 @@
   hosts: localhost
   connection: local
   tasks:
-#    -name: copy a file
-#     ansible.builtin.copy:
+#    - name: copy a file
+#      ansible.builtin.copy:
 #        src: test.txt
 #        dest: /tmp/test-copy.txt
 
