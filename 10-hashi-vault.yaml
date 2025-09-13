@@ -1,30 +1,10 @@
-#- name: Hashicorp Vault connect
-#  hosts: local
-#  connection: local
-#  tasks:
-#    - name: Print
-#      ansible.builtin.debug:
-#        msg: "Password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=secret/data/test/demo-ssh:password', token=vault_token, url='http://vault.azdevops.online:8200') }}"
-#
-
 - name: Hashicorp Vault connect
   hosts: local
   connection: local
-  gather_facts: false
-
-  vars:
-    vault_addr: "http://vault.azdevops.online:8200"
-
   tasks:
-    - name: Print secret from Vault
+    - name: Print
       ansible.builtin.debug:
-        msg: >
-          Password - {{
-            lookup(
-              'community.hashi_vault.hashi_vault',
-              'secret=test/data/demo-ssh:password',
-              token=vault_token,
-              url=vault_addr
-            )
-          }}
-        
+        msg: "Password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=test/data/demo-ssh:password:password', token=vault_token, url='http://vault.azdevops.online:8200') }}"
+
+
+
