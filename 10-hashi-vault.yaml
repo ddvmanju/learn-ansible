@@ -22,7 +22,7 @@
           Password - {{
             lookup(
               'community.hashi_vault.hashi_vault',
-              'secret=test/data/kv/demo-ssh:password',
+              'secret=/v1/test/data/demo-ssh:password',
               token=vault_token,
               url=vault_addr
             )
